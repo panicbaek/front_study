@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<!-- Get
+ url뒤에 쿼리스트링 형태로 값을 전송
+ 전송 데이터 비밀 보장이 안됨
+ 전송할 수 있는 크기가 제한됨 -->
+ <!-- Post
+  값전송 자체가 요청 객체에 포함해서 보냄
+  보안이 유지되서 일반적으론 로그인, 회원가입
+  전송할 수 있는 크기 제한이 없음 -->
+
+  <form action="https://www.google.com/search" method="get">
+    <input type="text" name="q">
+    <input type="submit" value="검색">
+  </form>
+
+  <form>
+    <input type="text" size="5" maxlength="5" autofocus minlength="2"><br>
+    <input type="text" placeholder="아이디를 입력해 주세요"><br>
+    <input type="submit" value="로그인"><br>
+    <input type="text" value="백우식" readonly><br>
+    <input type="text" value="백우식" disabled><br>
+    <input type="text" required><br>
+    <input type="submit" value="전송"><br>
+  </form>
+
+  <form>
+    텍스트 : <input type="text"><br>
+    비밀번호 : <input type="password"><br>
+    라디오버튼 : <input type="radio" name="yes or no" value="yes"> 예 
+                <input type="radio" name="yes or no" value="no">아니요<br>
+    체크박스 : <input type="checkbox" name="chk" value="JAVA"> JAVA
+              <input type="checkbox" name="chk" value="HTML" checked> HTML
+              <input type="checkbox" name="chk" value="css" CSS> CSS
+              <input id="agree" type="checkbox">
+              <label for="agree">약관동의</label>
+<!-- 편의기능 -->
+    <br><br>
+    <input type="submit" value="전송">
+    <input type="reset" value="리셋">
+    <input type="button" value="버튼" onclick="alert('버튼을 눌렀네')">
+    <button>안에 뭐가 있을까요오~?</button>
+
+    <br><br><br>
+<!-- 파일 태그 -->
+    <input type="file">
+<!-- 창 설정 -->
+    <textarea rows="10" cols="40">오 홀리 쉐엣</textarea>
+<!-- select태그 -->
+    <select name="color">
+      <option value="red">빨강</option>
+      <option value="blue" selected>파랑</option>
+      <option value="dark">검정</option>
+      <option value="yellow">노랑</option>
+    </select>
+
+    <input type="hidden">
+
+    <input type="date">
+
+    
+  </form>
+
+  
+</body>
+</html>

@@ -1,0 +1,19 @@
+ol{
+  list-style-type: lower-roman;
+}
+ul > li {
+  /* list-style-image: -moz-element(); */
+  /* list-style-type: none;
+  background-image: url("../../images/kakaofriends.gif");
+  background-repeat: no-repeat;
+  background-size: 50px;
+  background-position: left center;
+  margin: 0;
+  padding: 20px 0 20px 50px; */
+}
+
+ul {
+  list-style: square;
+  list-style-position: outside;
+}
+

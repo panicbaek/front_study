@@ -1,0 +1,12 @@
+/* 하위 선택자 */
+#first p{
+  color: red;
+}
+#second > p {
+  background-color: aqua;
+}
+
+/* p.ineer 는 ineer라는 클래스 중에 p만 적용됨 . 의 중요성 */
+p.inner {
+  color: blue;
+}

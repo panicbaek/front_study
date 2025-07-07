@@ -1,0 +1,23 @@
+body {
+  background-image: url(../../images/kakaofriends.gif);
+  background-repeat: no-repeat;
+  background-size: 300px;
+  background-position: center center;
+  height:3000px;
+  background-attachment: fixed;
+/* 이미지  */
+  background: skyblue url(../../images/kakaofriends.gif) no-repeat fixed;
+/* 배경 그라데이션 */
+  background: linear-gradient(to right bottom, blue, pink);
+  
+}
+
+h1 {
+  background-color: pink;
+}
+p {
+  background-color: rgb(255, 100, 25);
+}
+.bg {
+  background-color: rgba(100, 255, 50, 0.3);
+}

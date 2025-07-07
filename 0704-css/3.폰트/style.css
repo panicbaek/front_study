@@ -1,0 +1,59 @@
+p {
+  /* 글꼴 크기 */
+  font-size: 32px;
+  /* 글꼴 두께  */
+  /*
+   100 = lighter 
+   400 = nomal (기본값)
+   700 = bold
+   900 = bolder
+   */
+  font-weight: lighter
+}
+
+/* 16px = 1em = 100% */
+body {
+  /* 줄간격 */
+  line-height: 3em;
+
+  /* 폰트 */
+  font-family: 'Courier New', Courier, monospace;
+
+  /* 폰트 스타일 */
+  font-style: unset;
+
+  /* 소문자를 대문자로 바꿈 */
+  font-variant: small-caps;
+}
+
+  /* 한번에 지정하는법 */
+/* font: [font-style font-variant font-weight] */
+        /* [font-size/line-height] font-family; */
+
+/* p {
+  font: italic bold 25px '굴림', Gulim;
+  font: bold italic small-caps
+        12px/1.2 '돋움', '굴림', Gulim;s
+} */
+
+h5 {
+  font-size: 32px;
+  /* 글꼴 색 */
+  color: red;
+  color: #ff0000;
+  color: rgb(255, 0, 0);
+  /* 텍스트 효과 */
+  text-decoration: underline;
+  /* 대소문자 설정 */
+  text-transform: lowercase;
+  /* 그림자 */
+  /* 가로 x축 세로 y축 그림자퍼짐 그림자색 */
+  text-shadow: 1px 4px 1px darkcyan;
+  text-shadow: 2px 2px 2px lime;
+
+  /* 자간 글자간의 간격 */
+  letter-spacing: 5px;
+  /* 단어 사이의 간격 */
+  word-spacing: 30;
+  text-align: center;
+}

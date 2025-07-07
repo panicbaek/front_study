@@ -1,0 +1,22 @@
+* {
+  /* 대부분의 작업의 기본 초기값 */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1 {
+  border: 3px solid red;
+  /* 모서리가 둥글게 하는 명령어 */
+  border-radius: 10px;
+  border-top-color: aqua;
+
+  padding: 5px;
+  margin: 10px;
+
+  width: 318;
+  height: 300px;
+/* border의 스타일을 변형해주는 명령어 */
+  border-style: dotted dashed solid groove;
+
+  box-shadow: inset 10px 10px 10px blue;
+}

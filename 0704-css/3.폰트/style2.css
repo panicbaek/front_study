@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&display=swap');
+
+*{
+  font-family: "Bitcount Grid Double", system-ui;
+  font-size: 30px;
+  text-shadow: 2px 2px 3px;
+}
+@font-face {
+    font-family: 'TheTuesdayofYounah';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2506-1@1.0/TheTuesdayofYounah.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}

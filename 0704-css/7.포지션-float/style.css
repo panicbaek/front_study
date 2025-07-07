@@ -1,0 +1,39 @@
+.float {
+  float: left;
+}
+
+.clear {
+  clear: both;
+}
+
+p {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 30px;
+  font-style: italic;
+  color: red
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+}
+
+.box1 {
+  background-color: red;
+}
+.box2 {
+  background-color: yellow;
+}
+.box3 {
+  background-color: rgb(10, 228, 64);
+  float: right;
+}
+.box4 {
+  background-color: #1e58a3;
+  margin: auto;
+}
+.container {
+  height: 200px;
+  border: ipx solid red;
+  overflow: auto;
+}

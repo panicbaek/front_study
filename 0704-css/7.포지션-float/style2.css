@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: azure;
+}
+
+.menu {
+  background-color: pink;
+  width: 500px;
+  height: 100px;
+}
+.nav {
+  background-color: aqua;
+  float: left;
+  height: 300px;
+  width: 100px;
+}
+.content {
+  background-color: violet;
+  float: left;
+  width: 400px;
+  height: 300px;
+}
+.footer {
+  background-color: green;
+  
+  height: 100px;
+  width: 500px;
+  clear: both;
+}
+.container {
+  width: 500px;
+  height: 500px;
+  margin: auto;
+}
