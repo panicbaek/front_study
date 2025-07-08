@@ -1,0 +1,58 @@
+/* 선택자 */
+div > p:first-child {
+  color: red;
+}
+
+div > p:last-child {
+  color: blue;
+}
+/* 중간에 넣고싶은것이 있을때  */
+
+/* 홀수 */
+/* 다른 태그가 중간에 있어요 제외된 순번으로 처리 */
+div > h3:nth-of-type(odd) {
+  color: pink;
+}
+/* 짝수 */
+/* 다른 태그가 중간에 있으면 포함된 순번으로 처리 */
+div > h3:nth-of-type(even) {
+  color: skyblue
+}
+
+#outer > h4:nth-child(5) {
+  color: red;
+}
+
+/* 기본 상태 : 페이지를 방문하지 않았을때  */
+a:link {
+  color: aqua;
+}
+/* 해당 페이지를 방문하면 적용 */
+a:visited {
+  color: red;
+}
+/* 마우스를 올려두면 */
+a:hover {
+  color: blueviolet;
+}
+/* 마우스를 클릭했을때 */
+a:active {
+  color: pink;
+}
+/* 포커스를 가졌을때 */
+a:focus {
+  color: yellow;
+}
+
+input:focus {
+  background-color: skyblue;
+}
+
+input::placeholder {
+  color: red;
+}
+/* 웹에서 마우스로 드래그 했을때 적용 */
+p::selection {
+  color: skyblue;
+  background-color: pink;
+}

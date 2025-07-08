@@ -1,0 +1,79 @@
+.parent {
+  border: 1px solid red;
+  display: flex; 
+  /* flex를 하면 가로정렬 */
+}
+
+.parent > div {
+  height: 100px;
+  width: 100px;
+  background-color: skyblue;
+  margin: 5px;
+}
+
+/* 너비 비율을 설정함 자식별로 설정 가능 */
+.child1 {
+  /* 증가 비율  */
+  flex-grow: 1;
+  /* 감소 비율 */
+  flex-shrink: 3;
+}
+.child2 {
+  flex-grow: 2;
+  flex-shrink: 2;
+}
+.child3 {
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.parent2 {
+  border: 1px solid red;
+  height: 500px;
+  display: flex;
+}
+
+.parent2 > div {
+  height: 100px;
+  width: 100px;
+  background-color: pink;
+  margin: 5px;
+}
+
+/* order는 자식들의 순서를 변경시킴 (0부터 시작가능) */
+/* align-self 는 자식들의 위치를 개별적으로 변경가능함 */
+.child4 {
+  flex: 1;
+  /* order: 1; */
+  align-self: center;
+}
+.child5 {
+  flex: 1;
+  /* order: 2; */
+  align-self: flex-end;
+}
+.child6 {
+  flex: 1;
+  /* order: 0; */
+}
+
+/* margin으로 자식들의 위치를 따로 변경가능 */
+.parent3 {
+  border: 1px solid red;
+  display: flex;
+}
+
+.parent3 > div {
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  margin: auto;
+}
+
+.child7 {
+  /* margin-right: auto; */
+}
+
+.child8 {
+  margin-right: auto;
+}

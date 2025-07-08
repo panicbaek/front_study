@@ -1,0 +1,63 @@
+/* before, after 둘다 inline요소임 크기변겅 x */
+/* 둘다 comtent는 필수 공백이라도 지정 */
+h1::before {
+  content: "★";
+  color: red;
+}
+
+h1::after {
+  content: "new";
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  border-radius: 5px;
+  position: absolute;
+}
+
+.img {
+  width: 500px;
+  height: 500px;
+  background: url(../../images/gifpepe.gif) no-repeat;
+  background-size: cover;
+
+  position: relative;
+}
+
+.img::before {
+  content: "이미지 글씨";
+  color: white;
+  font-size: 60px;
+  text-align: center;
+  line-height: 500px;
+
+  background: rgba(0, 0, 0,0.4);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.content {
+  background-color: pink;
+  width: calc(100% - 200px);
+}
+/* content는 브라우저에 따라서 늘어남  */
+
+.aside {
+  background-color: yellow;
+  width: 200px;
+}
+/* aside는 200px고정 */
+
+.container > div {
+  float: left;
+  height: 50px;
+}
+
+
+.wrapper > b {
+  font-size: 40px;
+  vertical-align: middle;
+}
+  /* :vertical = 인라인, 인라인블록들 끼리 세로맞춤을 하고 싶을때 */

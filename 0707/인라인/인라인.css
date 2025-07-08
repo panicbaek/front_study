@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;  
+}
+
+ul {
+  font-size: 0;
+}
+
+li {
+  font-size: 16px;
+  width: 100px;
+  height: 200px;
+  border: 1px solid red;
+  display: inline-block;
+}
+/* 블록 자체를 안보이게 해주는 명령어 */
+/* 숨김 처리는 해주지만 해당 영역은 남아 있음 */
+.visi {
+  visibility: hidden;
+  /* 숨김처리도 해주고 영역도 사라짐 */
+  display: none;
+}

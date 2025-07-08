@@ -9,11 +9,11 @@ p {
   float: left;
 }
 
-.box1, .box2, .box3, .box4 {
+.box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8 {
   width: 100px;
   height: 100px;
   margin: 10px;
-  transition: transform 0.3s;
+  transition: transform 0.2s;
 }
 
 .box1 {
@@ -27,14 +27,29 @@ p {
 .box3 {
   background-color: green;
 }
-
 .box4 {
-  background-color: blue;
+  background-color: rgb(25, 38, 216);
+}
+.box5 {
+  background-color: rgb(139, 211, 45);
+}
+.box6 {
+  background-color: rgb(156, 235, 9);
+}
+.box7 {
+  background-color: rgb(7, 199, 125);
+}
+.box8 {
+  background-color: rgb(221, 18, 160);
 }
 
 .box1:hover,
 .box2:hover,
 .box3:hover,
-.box4:hover {
+.box4:hover,
+.box5:hover,
+.box6:hover,
+.box7:hover,
+.box8:hover {
   transform: scale(1.1);
 }

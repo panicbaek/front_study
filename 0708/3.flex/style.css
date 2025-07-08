@@ -1,0 +1,80 @@
+/* flex는 기본적으로 부모한테 속성을 걸어주는거임 */
+.parent {
+  border: 1px solid red;
+  height: 500px;
+  display: flex;
+  /* 자식요소들을 정렬 */
+  justify-content: space-around;
+  /* space-around: 자식들을 일정 간격으로 균등하게 정렬해줌 */
+  /* space-between: 좌우 여백없이 간격 조절 후 가운데 정렬*/
+
+  /* 자식요소들을 세로로 정렬 */
+  align-items: center;
+}
+
+/* flex박스에 자식으로 있는 요소는
+  높이를 설정하지 않으면 부모크기에 맞춰짐  */
+.child {
+  background-color: pink;
+  width: 50px;
+  height: 50px;
+}
+
+.parent2 {
+  border: 1px solid red;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.child2 {
+  width: 100px;
+  height: 100px;
+  background-color: skyblue;
+}
+/* display로 속성값을 먼저 정하고 사용 *** */
+
+.parent3 {
+  border: 1px solid red;
+  height: 500px;
+/* flex로 설정하는 순간 블럭, 라인 상관없이 가로정렬 해줌 */
+  display: flex;
+  /* 자식들 방향 배치 : 기본값이 row여서 설정 안해도 가로배치됨 */
+  /* flex-direction: row; 가로 정방향 배치 */
+  /* flex-direction: row-reverse; 가로 역방향 배치 */ 
+  /* flex-direction: column; 세로 정방향 배치 */
+  /* flex-direction: column-reverse; 세로 역방향 배치 */
+}
+
+.child3 {
+  width: 100px;
+  height: 100px;
+  background-color: pink;
+}
+
+.parent4 {
+  border: 1px solid red;
+  height: 600px;
+
+  display: flex;
+  /* 부모 크기에 맞춰서 넣을건지 줄바꿈 할건지 설정 */
+  /* nowrap(기본값) : 줄바꿈 안함->자식 크기가 줄어듬 */
+  /* flex-wrap: nowrap; 줄바꿈 안함 브라우저 크기에 맞게 출어듬 */
+  /* flex-wrap: wrap; 줄바꿈 시킴 */
+  /* flex-wrap: wrap-reverse; 역방향 진행  */
+
+  /* 배치방향과 줄바꿈은 하나의 속성으로 처리가 가능함 */
+  flex-flow: row wrap;
+
+  /* wrap일 경우 자식들 간격 설정 */
+  align-content: space-around;
+}
+
+.parent4 > div {
+  width: 100px;
+  height: 100px;
+  background-color: skyblue;
+  margin: 5px;
+}
