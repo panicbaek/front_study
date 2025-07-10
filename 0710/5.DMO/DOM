@@ -1,0 +1,8 @@
+DOM 트리
+Document Object Model
+
+document.header
+document.body
+document.style.background = 'red'
+
+등등 
