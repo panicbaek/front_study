@@ -98,6 +98,8 @@ let arr_json = JSON.stringify(arr);
 // 배열은 아니지만 배열 구조 ( 대괄호 )가 유지된채로 문자열이 됨
 console.log(arr_json, typeof arr_json);
 
+localStorage.setItem( 'arr', arr_json );
+
 arr = localStorage.getItem('arr');
 
 // 로컬스토리지에서 꺼내와도 아직까진 문자열임 ( 구조가 살아있는 상태 )
