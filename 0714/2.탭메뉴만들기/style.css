@@ -1,0 +1,36 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 20px;
+}
+
+.list {
+  list-style-type: none;
+  display: flex;
+}
+
+.tab-button {
+  padding: 10px;
+  color: lightgray;
+  /* 해당 영역에 마우스를 올리면 포인트를 잡아주는 속성 */
+  cursor: pointer; 
+}
+
+.selected {
+  font-weight: bold;
+  color: black;
+  border-bottom: 1px solid lightgoldenrodyellow;
+}
+
+.tab-content {
+  padding: 15px;
+  display: none;
+}
+
+.show {
+  display: block;
+}
