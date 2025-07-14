@@ -7,6 +7,7 @@ let boxHeight = box.clientHeight;
 console.log(boxHeight); // 눈에 보이는 높이
 
 let isDisabled = true;
+const next = document.querySelector('#next')
 
 //스크롤이 작동될때 실행되는 이벤트
 box.addEventListener('scroll', ()=> {
@@ -16,13 +17,19 @@ box.addEventListener('scroll', ()=> {
     document.querySelector('#chk').disabled = false;
     isDisabled = false;
   }
+
 })
 
-const next = document.querySelector('#next')
+chk.addEventListener('change', () => {
+  if (chk.checked) {
+    alert('다음');
+  }
+});
 
-next.addEventListener('click', ()=> {
-  alert('동의하십쇼')  
-})
-
-
-  
+next.addEventListener('click', () => {
+  if (chk.checked) {
+    alert('감사합니다');
+  } else {
+    alert('동의하십쇼');
+  }
+});
