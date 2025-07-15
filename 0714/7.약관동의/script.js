@@ -20,12 +20,6 @@ box.addEventListener('scroll', ()=> {
 
 })
 
-chk.addEventListener('change', () => {
-  if (chk.checked) {
-    alert('다음');
-  }
-});
-
 next.addEventListener('click', () => {
   if (chk.checked) {
     alert('감사합니다');
@@ -33,3 +27,18 @@ next.addEventListener('click', () => {
     alert('동의하십쇼');
   }
 });
+
+console.log(window.innerHeight);
+console.log(document.body.clientHeight); //<< 요소의 높이 clientHeight
+
+const innerHeigh = window.innerHeight;
+const bodyHeight = document.body.clientHeight;
+
+window.addEventListener('scroll', ()=> {
+  console.log(window.scrollY); //<< 브라우저의 스크롤 위치를 나타냄
+
+  const status = window.screenY / (bodyHeight - innerHeigh) * 100;
+
+  document.querySelector('.status-bar').style.width = `${status}%`;
+  
+})
